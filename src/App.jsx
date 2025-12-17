@@ -1,5 +1,5 @@
 import "./App.css";
-import Usercards from "./components/Usercards";
+import Usercards from "./Components/Usercards";
 import Rohit from "./assets/Rohit.jpg";
 import Virat from "./assets/Virat.jpg";
 import Jasprit from "./assets/Jasprit.jpg";
