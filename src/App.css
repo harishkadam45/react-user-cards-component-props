@@ -1,7 +1,21 @@
 .conatiner {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap; /* allows cards to wrap on smaller screens */
   justify-content: space-between;
   padding: 0 5%;
-  gap: 5px;
+  gap: 20px;
+}
+
+/* Tablet view */
+@media (max-width: 768px) {
+  .conatiner {
+    justify-content: center; /* center cards */
+  }
+}
+
+/* Mobile view */
+@media (max-width: 480px) {
+  .conatiner {
+    padding: 20px;
+  }
 }

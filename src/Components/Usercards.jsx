@@ -1,14 +1,13 @@
-import React from "react";
 import "./Usercards.css";
 
 const Usercards = (props) => {
   return (
-    <div className="user-container" style={props.style}>
+    <div className="user-container">
       <h2 id="user-name">{props.name}</h2>
       <img id="user-image" src={props.image} alt={props.name} />
-      <p className={"user-desc"}>{props.desc}</p>
+      <p className="user-desc">{props.desc}</p>
     </div>
   );
 };
 
-export default Usercards; //if you want to use this Usercards component outside this file you need to export it
+export default Usercards;

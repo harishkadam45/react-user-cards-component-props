@@ -7,11 +7,28 @@
   align-items: center;
   color: black;
   gap: 15px;
+  width: 30%; /* Desktop: 3 cards per row */
+  border-radius: 10px;
 }
 
+/* User image styling */
 #user-image {
   height: 100px;
   width: 100px;
   border-radius: 50%;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+}
+
+/* Tablet view */
+@media (max-width: 768px) {
+  .user-container {
+    width: 45%; /* 2 cards per row */
+  }
+}
+
+/* Mobile view */
+@media (max-width: 480px) {
+  .user-container {
+    width: 100%; /* 1 card per row */
+  }
 }
