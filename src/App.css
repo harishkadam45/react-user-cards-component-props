@@ -19,3 +19,12 @@
     padding: 20px;
   }
 }
+/* ============================= */
+/* MOBILE FIX ONLY               */
+/* ============================= */
+@media (max-width: 480px) {
+  body {
+    align-items: flex-start; /* 🔥 KEY FIX */
+    height: auto; /* avoid 100vh issue */
+  }
+}

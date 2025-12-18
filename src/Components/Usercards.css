@@ -7,11 +7,11 @@
   align-items: center;
   color: black;
   gap: 15px;
-  width: 30%; /* Desktop: 3 cards per row */
+  width: 30%; /* Desktop: unchanged */
   border-radius: 10px;
 }
 
-/* User image styling */
+/* Desktop image */
 #user-image {
   height: 100px;
   width: 100px;
@@ -19,17 +19,31 @@
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
 }
 
-/* Tablet view */
+/* Tablet view – unchanged */
 @media (max-width: 768px) {
   .user-container {
-    width: 45%; /* 2 cards per row */
+    width: 45%;
   }
 }
 
-/* Mobile view */
+/* =============================== */
+/* MOBILE FIX ONLY (≤ 480px)       */
+/* DESKTOP / TABLET NOT AFFECTED   */
+/* =============================== */
 @media (max-width: 480px) {
   .user-container {
-    margin-top: 20px;
-    width: 100%; /* 1 card per row */
+    width: 100%;
+    margin-top: 20px; /* reduced from 50px */
+    padding: 18px; /* tighter padding */
+  }
+
+  #user-image {
+    width: 80px; /* smaller image */
+    height: 80px;
+  }
+
+  #user-name {
+    font-size: 1.2rem; /* better name fit */
+    text-align: center;
   }
 }
