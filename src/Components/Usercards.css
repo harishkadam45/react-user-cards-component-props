@@ -29,6 +29,7 @@
 /* Mobile view */
 @media (max-width: 480px) {
   .user-container {
+    margin-top: 20px;
     width: 100%; /* 1 card per row */
   }
 }
